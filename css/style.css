@@ -23,7 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+}
+
+.container__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__links {
@@ -41,7 +47,7 @@
     border-radius: 10px;
     color: var(--black);
     padding: 0.5em 1em;
-    
+
 }
 
 .main-containers {
@@ -55,6 +61,85 @@
 
 }
 
+.container__projects {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.project__titles {
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 1em;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3em;
+}
+
+.habilidades-container__icons {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.habilidades-container__text {
+    display: flex;
+    justify-content: left;
+    margin: 1em 5em;
+}
+
+.habilidades__img {
+    width: 3em;
+    height: auto;
+    margin: 1em 1em;
+}
+
+.habilidade__name {
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+}
+
 .footer-container {
     min-height: 30vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-container__icons {
+    display: flex;
+    align-items: last baseline;
+    justify-content: right;
+}
+
+.footer__title {
+    margin: 0.5em 0.25em;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--white);
+}
+
+.footer__text {
+    margin: 0.5em 0.6em;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--white);
+}
+
+.footer__link {
+    text-decoration: none;
+    margin: 1em 0.5em;
+}
+
+.footer__icon {
+    font-size: 2em;
+    color: var(--white);
+}
+
+.invisivel {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.fade__down {
+    transform: translate(0, 5em);
 }

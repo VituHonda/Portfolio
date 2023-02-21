@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 </head>
 
 <body id="inicio">
@@ -26,7 +28,7 @@
             <a href="#inicio" class="header__links">Início</a>
             <a href="#projetos" class="header__links">Projetos</a>
             <a href="#certificados" class="header__links">Certificados</a>
-            <a href="#linguagens" class="header__links">Linguagens</a>
+            <a href="#habilidades" class="header__links">Habilidades</a>
             <a href="#contato" class="header__links">Contato</a>
         </nav>
 
@@ -40,9 +42,27 @@
         <!-- Fim Início -->
 
         <!-- Projetos -->
-        <section class="container-fluid main-containers bg__white__gray" id="projetos">
+        <section class="container-fluid main-containers container__flex bg__white__gray" id="projetos">
 
             <h1 class="main__titles">Projetos</h1>
+
+            <div class="container__projects">
+
+                <h2 class="project__titles">Todos</h2>
+                <h2 class="project__titles">Front</h2>
+                <h2 class="project__titles">Back</h2>
+                <h2 class="project__titles">Dados</h2>
+                <h2 class="project__titles">Mobile</h2>
+
+            </div>
+
+            <div>
+
+
+
+
+
+            </div>
 
         </section>
         <!-- Fim Projetos -->
@@ -55,13 +75,87 @@
         </section>
         <!-- Fim Certificados -->
 
-        <!-- Linguagens -->
-        <section class="container-fluid main-containers bg__white__gray" id="linguagens">
+        <!-- Habilidades -->
+        <section class="container-fluid main-containers bg__white__gray" id="habilidades">
 
-            <h1 class="main__titles">Linguagens</h1>
+            <h1 class="main__titles">Habilidades</h1>
+
+            <section class="habilidades-container">
+                <!-- DEVICONS -->
+                <ul class="habilidades-container__icons">
+                    <!-- PYTHON -->
+                    <li>
+                        <img id="pythonicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Ícone Python" />
+                    </li>
+                    <!-- JAVA  -->
+                    <li>
+                        <img id="javaicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            alt="Ícone Java" />
+                    </li>
+
+                    <!-- HTML -->
+                    <li>
+                        <img id="htmlicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="Ícone Html5" />
+                    </li>
+                    <!-- CSS -->
+                    <li>
+                        <img id="cssicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="Ícone Css3" />
+                    </li>
+                    <!-- JS -->
+                    <li>
+                        <img id="jsicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="Ícone Java SCript" />
+                    </li>
+                    <!-- GOlang -->
+                    <li>
+                        <img id="goicon" class="habilidades__img"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+                            alt="Ícone Golang" />
+                    </li>
+                </ul>
+
+
+                <div class="habilidades-container__text">
+                    <ul>
+                        <!-- PYTHON -->
+                        <li>
+                            <h2 id="pythontxt" class="habilidade__name invisivel">Python</h2>
+                        </li>
+                        <!-- JAVA -->
+                        <li>
+                            <h2 id="javatxt" class="habilidade__name invisivel">Java</h2>
+                        </li>
+                        <!-- HTML -->
+                        <li>
+                            <h2 id="htmltxt" class="habilidade__name invisivel">Html5</h2>
+                        </li>
+                        <!-- CSS -->
+                        <li>
+                            <h2 id="csstxt" class="habilidade__name invisivel">Css3</h2>
+                        </li>
+                        <!-- JS -->
+                        <li>
+                            <h2 id="jstxt" class="habilidade__name invisivel">JavaScript</h2>
+                        </li>
+                        <!-- GOlang -->
+                        <li>
+                            <h2 id="gotxt" class="habilidade__name invisivel">GO</h2>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
 
         </section>
-        <!-- Fim Linguagens -->
+        <!-- Fim Habilidades -->
 
     </main>
 
@@ -69,16 +163,36 @@
 
         <!-- Contato -->
         <section>
+
+            <h2 class="footer__title">Contato</h2>
+
+            <p class="footer__text">vitorutk@gmail.com</p>
+
+
         </section>
         <!-- Fim Contato -->
 
         <!-- Icones -->
-        <section>
+        <section class="footer-container__icons">
+
+            <!-- LINKEDIN -->
+            <a class="footer__link" href="https://www.linkedin.com/in/vitorutagawatanabe/" target="_blank">
+                <i class="devicon-linkedin-plain footer__icon"></i>
+            </a>
+
+            <!-- GITHUB -->
+            <a class="footer__link" href="https://github.com/VituHonda" target="_blank">
+                <i class="devicon-github-original footer__icon"></i>
+            </a>
 
         </section>
         <!-- Fim Icones -->
 
     </footer>
+
+    <!-- LINK JS -->
+    <script src="./js/nomeHabilidade.js"></script>
+
 
 </body>
 
