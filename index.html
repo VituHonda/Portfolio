@@ -36,47 +36,151 @@
 
     <main>
         <!-- Início -->
-        <section class="container-fluid main-containers bg__white__gray">
+        <section class="container-fluid main-containers bg__white__gray container__inicio">
+
+            <div class="container__inicio__partes">
+                <img class="inicio__img" src="./img/Perfil.png" alt="Foto de vitor tanabe com touca de pikachu">
+            </div>
+
+            <div class="container__inicio__partes inicio__descricao">
+                <h2 class="inico__title">Oi! Eu sou Vitor Tanabe também conhecido como Hondinha.</h2>
+                <p class="inicio__text">Atualmente estou aprendendo a programar e por isso estou testando de tudo um pouco começando por este portifolio. Tenho como objetivo aprender a fazer todo tipo de coisa com programação e não me sentir limitado para isso desenvolverei projetos e os colocarei aqui para treinar e colocar em prática os conhecimentos obtidos em cursos, sites e toda fonte online.</p>
+            </div>
+
 
         </section>
         <!-- Fim Início -->
 
         <!-- Projetos -->
-        <section class="container-fluid main-containers container__flex bg__white__gray" id="projetos">
+        <section class="main-containers container__flex bg__white__gray" id="projetos">
 
             <h1 class="main__titles">Projetos</h1>
 
-            <div class="container__projects">
+            <div class="container-fluid container__projects">
+            
+                <ul>
+                    <li class="projects__li">
+                        <input class="projects__input" type="radio" name="projetos" id="todos" checked>
+                        <label class="projects__label" for="todos">Todos</label>
+                    </li>
 
-                <h2 class="project__titles">Todos</h2>
-                <h2 class="project__titles">Front</h2>
-                <h2 class="project__titles">Back</h2>
-                <h2 class="project__titles">Dados</h2>
-                <h2 class="project__titles">Mobile</h2>
+                    <li class="projects__li">
+                        <input class="projects__input" type="radio" name="projetos" id="front">
+                        <label class="projects__label" for="front">Front</label>
+                    </li>
+
+                    <li class="projects__li">
+                        <input class="projects__input" type="radio" name="projetos" id="back">
+                        <label class="projects__label" for="back">Back</label>
+
+                    <li class="projects__li">
+                        <input class="projects__input" type="radio" name="projetos" id="dados">
+                        <label class="projects__label" for="dados">Dados</label>
+                    </li>
+
+                    <li class="projects__li">
+                        <input class="projects__input" type="radio" name="projetos" id="mobile">
+                        <label class="projects__label" for="mobile">Mobile</label>
+                    </li>
+
+                </ul>
 
             </div>
 
-            <div>
+            <div class="card__container">
 
+                <div class="card__style">
+                    <img class="card__image" src="./img/codigo.jpg" alt="codigo">
 
+                    <h4 class="card__title">Título</h4>
 
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
 
+                <div class="card__style">
+                    <img class="card__image" src="./img/codigo.jpg" alt="codigo">
 
+                    <h4 class="card__title">Título</h4>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="card__style">
+                    <img class="card__image" src="./img/codigo.jpg" alt="codigo">
+
+                    <h4 class="card__title">Título</h4>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            </div>
+
+            <div class="container-fluid project-container__link">
+                <a class="project__link" href="">Ver mais</a>
             </div>
 
         </section>
         <!-- Fim Projetos -->
 
         <!-- Certificados -->
-        <section class="container-fluid main-containers bg__white__gray" id="certificados">
+        <section class="main-containers bg__white__gray" id="certificados">
 
             <h1 class="main__titles">Certificados</h1>
+
+            <div class="certificados-container__procurar">
+                <label for="certificados"></label>
+                <input type="text">
+            </div>
+            
+            <div class="certificados-container certificados__list">
+
+                <ul>
+                    <li>
+                        <p>Big data analytics - FIAP</p>
+                    </li>
+                    <li>
+                        <p>HTML5 e CSS3 P1 - Alura</p>
+                    </li>
+                    <li>
+                        <p>HTML5 e CSS3 P2 - Alura</p>
+                    </li>
+                    <li>
+                        <p>HTML5 e CSS3 P3 - Alura</p>
+                    </li>
+                    <li>
+                        <p>Praticando HTML5 e CSS3 - Alura</p>
+                    </li>
+                    <li>
+                        <p>Introdução JS - Alura</p>
+                    </li>
+                    <li>
+                        <p>Golang - Alura</p>
+                    </li>
+                    <li>
+                        <p>Cloud fundamentals - FIAP</p>
+                    </li>
+                    <li>
+                        <p>Algorítimos - FIAP</p>
+                    </li>
+                    <li>
+                        <p>Blockchain - FIAP</p>
+                    </li>
+                    <li>
+                        <p>Blockchain - FIAP</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+
+            </div>
 
         </section>
         <!-- Fim Certificados -->
 
         <!-- Habilidades -->
-        <section class="container-fluid main-containers bg__white__gray" id="habilidades">
+        <section class="main-containers bg__white__gray" id="habilidades">
 
             <h1 class="main__titles">Habilidades</h1>
 

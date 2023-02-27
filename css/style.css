@@ -1,5 +1,4 @@
 :root {
-
     --light-gray: #d4cdc5;
     --light-blue: #5b88a5;
     --white: #f4f4f2;
@@ -58,19 +57,137 @@
     font-family: 'Source Code Pro', monospace;
     text-align: center;
     padding-top: 3em;
-
 }
+
+.container__inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__inicio__partes {
+    width: 30%;
+    margin: 3em 3em 0 3em;
+}
+
+.inicio__img {
+    width: 100%;
+    border-radius: 300px;
+}
+
+.inicio__descricao {
+    margin-top: 7em;
+}
+
+.inicio__title {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+}
+
+.inicio__text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.7em;
+}
+
 
 .container__projects {
     display: flex;
-    width: 70%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.project__titles {
-    font-family: 'Source Code Pro', monospace;
-    margin-top: 1em;
+.projects__li {
+    display: inline-block;
 }
+
+.projects__input {
+    visibility:hidden;
+}
+
+.projects__label {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    border: var(--light-gray) solid 2px;
+    border-radius: 10px;
+}
+
+.projects__input:checked + .projects__label {
+    background: var(--light-blue);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    border: var(--black) solid 2px;
+}
+
+.card__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card__style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: var(--black) solid 0.2em;
+    margin: 1em;
+    border-radius: 10px;
+
+}
+
+.card__image {
+    margin-top: 0.5em;
+    width: 90%;
+    height: auto;
+}
+
+.card__title {
+    margin-top: 0.5em;
+}
+
+.project__link {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    
+}
+
+.project__link:hover {
+    color: var(--white);
+    background: var(--dark-blue);
+}
+
+.project-container__link {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 1em;
+
+
+}
+
+.certificados-container {
+    width: 30%;
+    height: 50vh;
+    margin: 3em 1em 1em 5em ;
+}
+
+.certificados-container__procurar {
+    width: 30%;
+    margin-left: 7em ;
+}
+
+.certificados__list {
+    overflow: scroll;
+}
+
 
 .habilidades-container {
     display: grid;
