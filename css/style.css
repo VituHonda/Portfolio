@@ -197,13 +197,14 @@
 
 .certificados-container {
     margin: 3em 1em 1em 5em ;
-    width: clamp(50% 70% 90%);
+    max-height: 30%;
 }
 
 .certificados-container__procurar {
     width: clamp(50% 70% 90%);
     margin-left: 7em ;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .procurar__input {
@@ -226,6 +227,10 @@
     overflow: scroll;
     overflow-x: hidden;
     cursor: pointer;
+    max-height: 70%;
+}
+
+.certificados__list::-webkit-scrollbar{
     
 }
 
@@ -234,15 +239,16 @@
     margin-left: 3em;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .certificado__img {
     width: 95%;
+    height: 40vh;
 }
 
 .cert {
     text-align: center;
+    margin-right: 2em;
 }
 
 .cert:hover {
@@ -330,4 +336,8 @@
 
 .fade__down {
     transform: translate(0, 5em);
+}
+
+.invisivel__cert {
+    display: none;
 }
