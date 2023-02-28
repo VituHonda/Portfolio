@@ -28,14 +28,14 @@ function achaPosicao() {
         posicao[i].addEventListener('click', function (e) {
 
             for(j=0; j<posicao.length;j++){
-                posicao[j].classList.remove('cert_selecionado')
+                posicao[j].classList.remove('cert__selecionado')
             }
 
             var index = this.index
 
             image.src = imgcertificados[index]
 
-            e.target.classList.add('cert_selecionado')
+            e.target.classList.add('cert__selecionado')
 
         });
     };
