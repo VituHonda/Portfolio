@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body id="inicio">
@@ -38,13 +42,16 @@
         <!-- Início -->
         <section class="container-fluid main-containers bg__white__gray container__inicio">
 
-            <div class="container__inicio__partes">
+            <div class="container__inicio__img">
                 <img class="inicio__img" src="./img/Perfil.png" alt="Foto de vitor tanabe com touca de pikachu">
             </div>
 
-            <div class="container__inicio__partes inicio__descricao">
+            <div class="container__inicio__text inicio__descricao">
                 <h2 class="inico__title">Oi! Eu sou Vitor Tanabe também conhecido como Hondinha.</h2>
-                <p class="inicio__text">Atualmente estou aprendendo a programar e por isso estou testando de tudo um pouco começando por este portifolio. Tenho como objetivo aprender a fazer todo tipo de coisa com programação e não me sentir limitado para isso desenvolverei projetos e os colocarei aqui para treinar e colocar em prática os conhecimentos obtidos em cursos, sites e toda fonte online.</p>
+                <p class="inicio__text">Atualmente estou aprendendo a programar e por isso estou testando de tudo um
+                    pouco começando por este portifolio. Tenho como objetivo aprender a fazer todo tipo de coisa com
+                    programação e não me sentir limitado para isso desenvolverei projetos e os colocarei aqui para
+                    treinar e colocar em prática os conhecimentos obtidos em cursos, sites e toda fonte online.</p>
             </div>
 
 
@@ -57,7 +64,7 @@
             <h1 class="main__titles">Projetos</h1>
 
             <div class="container-fluid container__projects">
-            
+
                 <ul>
                     <li class="projects__li">
                         <input class="projects__input" type="radio" name="projetos" id="todos" checked>
@@ -112,11 +119,11 @@
 
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                
+
             </div>
 
             <div class="container-fluid project-container__link">
-                <a class="project__link" href="">Ver mais</a>
+                <!-- <a class="project__link" href="">Ver mais</a> -->
             </div>
 
         </section>
@@ -127,53 +134,56 @@
 
             <h1 class="main__titles">Certificados</h1>
 
-            <div class="certificados-container__procurar">
-                <label for="certificados"></label>
-                <input type="text">
-            </div>
-            
-            <div class="certificados-container certificados__list">
+            <div class="certificado-main">
+                <div>
+                    <div class="certificados-container__procurar">
+                        <label for="certificados"></label>
+                        <input class="procurar__input" type="text" name="certificados" id="certificados"
+                            placeholder="Digite o nome do certificado">
+                        <i class="fa-solid fa-magnifying-glass procurar"></i>
+                    </div>
 
-                <ul>
-                    <li>
-                        <p>Big data analytics - FIAP</p>
-                    </li>
-                    <li>
-                        <p>HTML5 e CSS3 P1 - Alura</p>
-                    </li>
-                    <li>
-                        <p>HTML5 e CSS3 P2 - Alura</p>
-                    </li>
-                    <li>
-                        <p>HTML5 e CSS3 P3 - Alura</p>
-                    </li>
-                    <li>
-                        <p>Praticando HTML5 e CSS3 - Alura</p>
-                    </li>
-                    <li>
-                        <p>Introdução JS - Alura</p>
-                    </li>
-                    <li>
-                        <p>Golang - Alura</p>
-                    </li>
-                    <li>
-                        <p>Cloud fundamentals - FIAP</p>
-                    </li>
-                    <li>
-                        <p>Algorítimos - FIAP</p>
-                    </li>
-                    <li>
-                        <p>Blockchain - FIAP</p>
-                    </li>
-                    <li>
-                        <p>Blockchain - FIAP</p>
-                    </li>
+                    <div class="certificados-container certificados__list">
 
-                </ul>
-            </div>
+                        <ul id="lista-certificados">
+                            <li>
+                                <p id="cert" class="cert">Big data analytics - FIAP</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">HTML5 e CSS3 P1 - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">HTML5 e CSS3 P2 - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">HTML5 e CSS3 P3 - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Praticando HTML5 e CSS3 - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Introdução JS - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Golang - Alura</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Cloud fundamentals - FIAP</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Algorítimos - FIAP</p>
+                            </li>
+                            <li>
+                                <p id="cert" class="cert">Blockchain - FIAP</p>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
 
-            <div>
-
+                <div class="certificado-container__img">
+                    <img src="" alt="" class="certificado__img" id="certificado-img">
+                </div>
             </div>
 
         </section>
@@ -296,7 +306,8 @@
 
     <!-- LINK JS -->
     <script src="./js/nomeHabilidade.js"></script>
-
+    <script src="./js/certificados.js"></script>
+    <script src="./js/filtroCertificados.js"></script>
 
 </body>
 
