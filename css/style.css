@@ -7,7 +7,7 @@
 }
 
 .bg__light__blue {
-    background-color: var(--light-blue);
+    background-color: var(--light-blue)!important;
 }
 
 .bg__white__gray {
@@ -18,35 +18,43 @@
     background-color: var(--black);
 }
 
-.header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .container__flex {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.header__button {
+    margin: 0.9em 0 0.9em 0!important;
+}
+
+#navbarNav {
+    align-items: center;
+    justify-content: center;
+}
+
+.no__padding {
+    padding: 0!important;
+}
+
 .header__links {
     text-decoration: none;
-    color: var(--white);
+    color: var(--white)!important;
     font-family: 'Source Code Pro', monospace;
     border-radius: 10px;
     padding: 0.5em 1em;
     margin: 1.5em 1.5em;
     transition: 0.5s;
+    align-items: center!important;
+    justify-content: center!important;
 }
 
 .header__links:hover {
     background-color: var(--white);
     border-radius: 10px;
-    color: var(--black);
+    color: var(--black)!important;
     padding: 0.5em 1em;
-
+    color: var(--black);
 }
 
 .main-containers {
@@ -194,8 +202,12 @@
     margin-top: 5em;
 }
 
+.teste {
+    min-width: 25%;
+}
+
 .certificados-container__procurar {
-    width: clamp(50% 70% 90%);
+    min-width: 100%;
     
     display: flex;
     justify-content: center;
@@ -209,6 +221,11 @@
     padding: 0 1em;
     width: clamp(50% 70% 90%);
     font-size: 1em;
+    min-width: 15em;
+}
+
+.procurar__input:focus {
+   outline: none;
 }
 
 .procurar {
@@ -220,11 +237,11 @@
 
 .certificados__list {
     margin: 2em;
-    max-height: 30%;
     overflow: scroll;
     overflow-x: hidden;
     cursor: pointer;
-    max-height: 70%;
+    min-height: 70%;
+    min-width: 85%;
 }
 
 /* .certificados__list::-webkit-scrollbar{
@@ -232,7 +249,7 @@
 } */
 
 .certificado-container__img {
-    width: 70%;
+    width: 50%;
     margin: 0 3em 3em 3em;
     display: flex;
     justify-content: center;
@@ -240,7 +257,8 @@
 }
 
 .certificado__img {
-    width: 40vw;
+    min-width: 40vh;
+    max-width: 90vh;
 }
 
 .cert {
@@ -278,7 +296,7 @@
 .habilidades-container__text {
     display: flex;
     justify-content: left;
-    align-items: center;
+    margin: 2em;
 }
 
 .habilidades__img {

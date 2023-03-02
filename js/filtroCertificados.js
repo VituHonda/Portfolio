@@ -1,4 +1,4 @@
-var campoFiltro = document.querySelector("#certificados");
+var campoFiltro = document.querySelector("#inputCertificados");
 
 campoFiltro.addEventListener('input', function () {
 
@@ -11,9 +11,9 @@ campoFiltro.addEventListener('input', function () {
             var cert = certificados[i];
             var nome = cert.textContent;
 
-            var expressao = new RegExp(this.value,"i");
+            var expressao = new RegExp(this.value, "i");
 
-            if(!expressao.test(nome)) {
+            if (!expressao.test(nome)) {
                 cert.classList.add("invisivel__cert")
             } else {
                 cert.classList.remove("invisivel__cert")
@@ -22,10 +22,11 @@ campoFiltro.addEventListener('input', function () {
         }
 
     } else {
-        for(i = 0; i < certificados.length; i++) {
+        for (i = 0; i < certificados.length; i++) {
             var cert = certificados[i];
             cert.classList.remove("invisivel__cert")
         }
     }
 
 });
+

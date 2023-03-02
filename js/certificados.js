@@ -8,7 +8,9 @@ var imgcertificados = [
     "./img/certificates/Certificado Golang.png",
     "./img/certificates/Certificado Cloud Fundamentals - FIAP.png",
     "./img/certificates/CertificadoAlgoritmo.png",
-    "./img/certificates/CertificadoBlockChain.png"
+    "./img/certificates/CertificadoBlockChain.png",
+    "./img/certificates/Certificado Python OO - ALURA.png",
+    "./img/certificates/Certificado Python OO avançado - ALURA.png"
 ];
 
 var posicao = document.querySelectorAll("#cert");
