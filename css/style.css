@@ -109,7 +109,6 @@
     font-size: 1em;
 }
 
-
 .container__projects {
     display: flex;
     justify-content: center;
@@ -178,7 +177,6 @@
     padding: 0.2em 0.5em;
     border-radius: 10px;
     font-size: 2em;
-    
 }
 
 .project__link:hover {
@@ -191,8 +189,6 @@
     justify-content: center;
     margin-top: 5em;
     margin-bottom: 1em;
-
-
 }
 
 .certificado-main {
@@ -208,7 +204,6 @@
 
 .certificados-container__procurar {
     min-width: 100%;
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
