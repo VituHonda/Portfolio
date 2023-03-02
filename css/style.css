@@ -351,3 +351,7 @@
 .invisivel__cert {
     display: none;
 }
+
+.teste {
+    overflow-x: hidden;
+}
