@@ -1,12 +1,14 @@
 :root {
-    --light-gray: #d4cdc5;
+    --light-gray: rgb(212, 205, 197);
     --light-blue: #5b88a5;
-    --white: #f4f4f2;
+    --white: rgb(244, 244, 242);
     --black: #191013;
     --dark-blue: #243a69;
+    --light-gray-opacity: rgba(212, 205, 197, 0.7);
+    --white-opacity: rgba(244, 244, 242, 0.7);
 }
 
-/* Generic  */
+/* Generic */
 .bg__light__blue {
     background-color: var(--light-blue) !important;
 }
@@ -15,8 +17,24 @@
     background: linear-gradient(var(--white), var(--light-gray));
 }
 
-.bg-black {
+.bg__black {
     background-color: var(--black);
+}
+
+.bg__clouds {
+    background-image: linear-gradient(var(--light-gray-opacity), var(--white-opacity)), url("../img/pexels-pixabay-45848.jpg");    
+    background-position: top;
+
+    animation: home__bg__animation 180s infinite alternate;
+}
+
+@keyframes home__bg__animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 /* Main */
