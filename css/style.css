@@ -6,6 +6,8 @@
     --dark-blue: #243a69;
     --light-gray-opacity: rgba(212, 205, 197, 0.7);
     --white-opacity: rgba(244, 244, 242, 0.7);
+    --zvariable: 400px;
+    --zvariable-small: 150px;
 }
 
 /* Generic */
@@ -333,7 +335,7 @@
 
 .carousel-wrapper {
     position: relative;
-    width: 5rem;
+    width: 10rem;
     margin: 10rem 0 0 0;
     perspective: 1000px;
 }
@@ -344,61 +346,63 @@
     height: 100%;
     transform-style: preserve-3d;
     transform: rotateY(-360deg);
-    animation: swirl 120s infinite;
+    animation: swirl 120s steps(10000, end) infinite;
 }
 
 .icon {
     position: absolute;
     top: 10px;
     left: 10px;
+    width: 160px;
+    height: 200px;
 }
 
 .icon img {
-    width: 10rem;
-    height: 10rem;
+    width: 160px;
+    height: 160px;
     border: 1px solid var(--dark-blue);
     box-shadow: 0 0 15px 3px var(--light-blue);
 
 }
 
 .icon.one {
-    transform: rotateY(0deg) translateZ(360px);
+    transform: rotateY(0deg) translateZ(var(--zvariable));
 }
 
 .icon.two {
-    transform: rotateY(36deg) translateZ(360px);
+    transform: rotateY(36deg) translateZ(var(--zvariable));
 }
 
 .icon.three {
-    transform: rotateY(72deg) translateZ(360px);
+    transform: rotateY(72deg) translateZ(var(--zvariable));
 }
 
 .icon.four {
-    transform: rotateY(108deg) translateZ(360px);
+    transform: rotateY(108deg) translateZ(var(--zvariable));
 }
 
 .icon.five {
-    transform: rotateY(144deg) translateZ(360px);
+    transform: rotateY(144deg) translateZ(var(--zvariable));
 }
 
 .icon.six {
-    transform: rotateY(180deg) translateZ(360px);
+    transform: rotateY(180deg) translateZ(var(--zvariable));
 }
 
 .icon.seven {
-    transform: rotateY(216deg) translateZ(360px);
+    transform: rotateY(216deg) translateZ(var(--zvariable));
 }
 
 .icon.eight {
-    transform: rotateY(252deg) translateZ(360px);
+    transform: rotateY(252deg) translateZ(var(--zvariable));
 }
 
 .icon.nine {
-    transform: rotateY(288deg) translateZ(360px);
+    transform: rotateY(288deg) translateZ(var(--zvariable));
 }
 
 .icon.ten {
-    transform: rotateY(324deg) translateZ(360px);
+    transform: rotateY(324deg) translateZ(var(--zvariable));
 }
 
 @keyframes swirl {
@@ -413,58 +417,68 @@
 
 @media screen and (max-width: 900px) {
 
+    .carousel-wrapper {
+        position: relative;
+        width: 95px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+    }
+
     .icon img {
-        width: 5rem;
-        height: 5rem;
+        width: 80px;
+        height: 80px;
         box-shadow: inset 0 0 20px 0 var(--light-blue);
     }
 
     .carousel-wrapper {
-        margin: 2rem;
+        margin: 4rem;
     }
 
-    .carousel {
-        overflow: visible;
-    }
 
     .icon.one {
-        transform: rotateY(0deg) translateZ(144px);
+        transform: rotateY(0deg) translateZ(var(--zvariable-small));
     }
 
     .icon.two {
-        transform: rotateY(36deg) translateZ(144px);
+        transform: rotateY(36deg) translateZ(var(--zvariable-small));
     }
 
     .icon.three {
-        transform: rotateY(72deg) translateZ(144px);
+        transform: rotateY(72deg) translateZ(var(--zvariable-small));
     }
 
     .icon.four {
-        transform: rotateY(108deg) translateZ(144px);
+        transform: rotateY(108deg) translateZ(var(--zvariable-small));
     }
 
     .icon.five {
-        transform: rotateY(144deg) translateZ(144px);
+        transform: rotateY(144deg) translateZ(var(--zvariable-small));
     }
 
     .icon.six {
-        transform: rotateY(180deg) translateZ(144px);
+        transform: rotateY(180deg) translateZ(var(--zvariable-small));
     }
 
     .icon.seven {
-        transform: rotateY(216deg) translateZ(144px);
+        transform: rotateY(216deg) translateZ(var(--zvariable-small));
     }
 
     .icon.eight {
-        transform: rotateY(252deg) translateZ(144px);
+        transform: rotateY(252deg) translateZ(var(--zvariable-small));
     }
 
     .icon.nine {
-        transform: rotateY(288deg) translateZ(144px);
+        transform: rotateY(288deg) translateZ(var(--zvariable-small));
     }
 
     .icon.ten {
-        transform: rotateY(324deg) translateZ(144px);
+        transform: rotateY(324deg) translateZ(var(--zvariable-small));
     }
 
     .habilities__container {
