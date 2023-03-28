@@ -24,7 +24,7 @@
 }
 
 .bg__clouds {
-    background-image: linear-gradient(var(--light-gray-opacity), var(--white-opacity)), url("../img/pexels-pixabay-45848.jpg");
+    background-image: linear-gradient(var(--light-gray-opacity), var(--white-opacity)), url("../img/clouds.jpg");
     background-position: top;
 
     animation: home__bg__animation 300s infinite alternate;
@@ -292,10 +292,6 @@
     min-height: 70%;
     min-width: 85%;
 }
-
-/* .certificados__list::-webkit-scrollbar{
-    display: none;
-} */
 
 .certificado-container__img {
     width: 50%;
