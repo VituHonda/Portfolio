@@ -6,8 +6,9 @@
     --dark-blue: #243a69;
 }
 
+/* Generic  */
 .bg__light__blue {
-    background-color: var(--light-blue)!important;
+    background-color: var(--light-blue) !important;
 }
 
 .bg__white__gray {
@@ -18,47 +19,14 @@
     background-color: var(--black);
 }
 
-.container__flex {
+/* Main */
+.main__containers {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.header__button {
-    margin: 0.9em 0 0.9em 0!important;
-}
-
-#navbarNav {
-    align-items: center;
-    justify-content: center;
-}
-
-.no__padding {
-    padding: 0!important;
-}
-
-.header__links {
-    text-decoration: none;
-    color: var(--white)!important;
-    font-family: 'Source Code Pro', monospace;
-    border-radius: 10px;
-    padding: 0.5em 1em;
-    margin: 1.5em 1.5em;
-    transition: 0.5s;
-    align-items: center!important;
-    justify-content: center!important;
-}
-
-.header__links:hover {
-    background-color: var(--white);
-    border-radius: 10px;
-    color: var(--black)!important;
-    padding: 0.5em 1em;
-    color: var(--black);
-}
-
-.main-containers {
     min-height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .main__titles {
@@ -67,28 +35,67 @@
     padding-top: 3em;
 }
 
+/* Header */
+.header__button {
+    margin: 0.9em 0 0.9em 0 !important;
+}
+
+#navbarNav {
+    align-items: center;
+    justify-content: center;
+}
+
+.no__padding {
+    padding: 0 !important;
+}
+
+.header__links {
+    text-decoration: none;
+    color: var(--white) !important;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1.5em 1.5em;
+    transition: 0.5s;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.header__links:hover {
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--black) !important;
+    padding: 0.5em 1em;
+    color: var(--black);
+}
+
+/* Home */
 .container__inicio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container__inicio__img {
-    width: clamp(500px, 30%, 30%);
+    width: 30rem;
+    height: 30rem;
+    background-image: url(../img/anime-me.PNG);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3em;
+    margin-bottom: 3rem;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 300px;
 }
 
 .container__inicio__text {
     width: clamp(40vh, 30%, 40%);
-    margin: 1em;
-}
-
-.inicio__img {
-    width: 100%;
-    border-radius: 300px;
+    margin:1rem;
+    text-align: center;
 }
 
 .inicio__descricao {
@@ -109,6 +116,16 @@
     font-size: 1em;
 }
 
+@media screen and (max-width: 800px) {
+
+    .container__inicio__img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+}
+
+/* Projects */
 .container__projects {
     display: flex;
     justify-content: center;
@@ -119,7 +136,7 @@
 }
 
 .projects__input {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .projects__label {
@@ -132,7 +149,7 @@
     border-radius: 10px;
 }
 
-.projects__input:checked + .projects__label {
+.projects__input:checked+.projects__label {
     background: var(--light-blue);
     padding: 0.5em 1em;
     border-radius: 10px;
@@ -191,15 +208,14 @@
     margin-bottom: 1em;
 }
 
+
+/* Certifications */
 .certificado-main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5em;
-}
-
-.teste {
-    min-width: 25%;
 }
 
 .certificados-container__procurar {
@@ -220,7 +236,7 @@
 }
 
 .procurar__input:focus {
-   outline: none;
+    outline: none;
 }
 
 .procurar {
@@ -266,7 +282,7 @@
     color: var(--white);
     border-radius: 10px;
     text-align: center;
-    
+
 }
 
 .cert__selecionado {
@@ -276,23 +292,32 @@
     text-align: center;
 }
 
+
+/* Habilities */
 .habilidades-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
     margin-top: 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .habilidades-container__icons {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 3rem 0 3rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .habilidades-container__text {
     display: flex;
-    justify-content: left;
-    margin: 2em;
+    justify-content: center;
+    align-items: center;
     font-size: clamp(0.5em, 1em, 1.5em);
+    margin-top: 4rem;
 }
 
 .habilidades__img {
@@ -306,6 +331,8 @@
     position: absolute;
 }
 
+
+/* Footer */
 .footer-container {
     min-height: 30vh;
     display: grid;
@@ -340,6 +367,7 @@
     color: var(--white);
 }
 
+/* Invisible */
 .invisivel {
     opacity: 0;
     transition: 0.5s;

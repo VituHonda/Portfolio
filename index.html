@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- main css -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
+    <!-- devicons cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -56,11 +58,11 @@
         </div>
     </nav>
 
-    <main>
+    <main class="">
         <!-- Início -->
-        <section class="container-fluid main-containers bg__white__gray container__inicio">
+        <section class="main__containers bg__white__gray container__inicio">
             <div class="container__inicio__img">
-                <img class="inicio__img" src="./img/Perfil.png" alt="Foto de vitor tanabe com touca de pikachu">
+                <!-- <img class="inicio__img" src="./img/anime-me.PNG" alt="Foto de vitor tanabe versão anime"> -->
             </div>
             <div class="container__inicio__text inicio__descricao">
                 <h2 class="inico__title">Oi! Eu sou Vitor Tanabe também conhecido como Hondinha.</h2>
@@ -70,7 +72,7 @@
         <!-- Fim Início -->
 
         <!-- Projetos -->
-        <section class="main-containers container__flex bg__white__gray" id="projetos">
+        <section class="main__containers bg__white__gray" id="projetos">
             <h1 class="main__titles">Projetos</h1>
 
             <!-- Do later when u have more good projects -->
@@ -123,10 +125,12 @@
         <!-- Fim Projetos -->
 
         <!-- Certificados -->
-        <section class="main-containers bg__white__gray" id="certificados">
+        <section class="main__containers bg__white__gray" id="certificados">
             <h1 class="main__titles">Certificados</h1>
+
             <div class="certificado-main">
-                <div class="teste">
+
+                <div>
                     <div class="certificados-container__procurar">
                         <label for="certificados"></label>
                         <input class="procurar__input" type="text" name="certificados" id="inputCertificados"
@@ -186,7 +190,7 @@
         <!-- Fim Certificados -->
 
         <!-- Habilidades -->
-        <section class="main-containers bg__white__gray" id="habilidades">
+        <section class="main__containers bg__white__gray" id="habilidades">
             <h1 class="main__titles">Habilidades</h1>
             <div class="habilidades-container">
                 <!-- DEVICONS -->
@@ -264,7 +268,7 @@
 
     </main>
 
-    <footer class="container-fluid footer-container bg-black" id="contato">
+    <footer class="footer-container bg-black" id="contato">
 
         <!-- Contato -->
         <section>
