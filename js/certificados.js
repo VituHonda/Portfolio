@@ -12,10 +12,9 @@ var imgcertificados = [
     "./img/certificates/Certificado Python OO - ALURA.png",
     "./img/certificates/Certificado Python OO avançado - ALURA.png",
     "./img/certificates/Certificado ALURA SASS.png",
-    "./img/certificates/Certificado ALURA Tailwind.png"
+    "./img/certificates/Certificado ALURA Tailwind.png",
+    "./img/certificates/Certificado ALURA JS DOM.png"
 ];
-
-
 
 var posicao = document.querySelectorAll("#cert");
 

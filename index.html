@@ -61,7 +61,7 @@
     <main class="">
         <!-- Início -->
         <section class="main__containers bg__clouds  container__inicio">
-            <div class="container__inicio__img" alt="moving left to right clouds background">
+            <div class="container__inicio__img" alt="foto Vitor Tanabe versão anime">
             </div>
             <div class="container__inicio__text inicio__descricao">
                 <h2 class="inico__title">Oi! Eu sou Vitor Tanabe também conhecido como Hondinha.</h2>
@@ -74,51 +74,22 @@
         <section class="main__containers bg__white__gray" id="projetos">
             <h1 class="main__titles">Projetos</h1>
 
-            <!-- Do later when u have more good projects -->
-            <!-- <div class="container-fluid container__projects">
-                <ul>
-                    <li class="projects__li">
-                        <input class="projects__input" type="radio" name="projetos" id="todos" checked>
-                        <label class="projects__label" for="todos">Todos</label>
-                    </li>
-                    <li class="projects__li">
-                        <input class="projects__input" type="radio" name="projetos" id="front">
-                        <label class="projects__label" for="front">Front</label>
-                    </li>
-                    <li class="projects__li">
-                        <input class="projects__input" type="radio" name="projetos" id="back">
-                        <label class="projects__label" for="back">Back</label>
-                    <li class="projects__li">
-                        <input class="projects__input" type="radio" name="projetos" id="dados">
-                        <label class="projects__label" for="dados">Dados</label>
-                    </li>
-                    <li class="projects__li">
-                        <input class="projects__input" type="radio" name="projetos" id="mobile">
-                        <label class="projects__label" for="mobile">Mobile</label>
-                    </li>
-                </ul>
-            </div> -->
+            <div class="project__container">
+                <a href="https://vituhonda.github.io/Portfolio/"><img src="./img/Projects/Portfolio.png" alt="" class="project__img"></a>
+                <h1 class="project__title">Portfolio</h1>
+                <div>  
+                    <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                </div>
+            </div>
 
-            <div class="card__container">
-                <div class="card__style">
-                    <img class="card__image" src="./img/soon.jpg" alt="Em breve">
-                    <h4 class="card__title">Título</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card__style">
-                    <img class="card__image" src="./img/soon.jpg" alt="Em breve">
-                    <h4 class="card__title">Título</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card__style">
-                    <img class="card__image" src="./img/soon.jpg" alt="Em breve">
-                    <h4 class="card__title">Título</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+            <div class="project__container__buttons">
+                <button class="project__button">Prev</button>
+                <button class="project__button">Next</button> 
             </div>
-            <div class="container-fluid project-container__link">
-                <!-- <a class="project__link" href="">Ver mais</a> -->
-            </div>
+
 
         </section>
         <!-- Fim Projetos -->
@@ -181,10 +152,13 @@
                             <li>
                                 <p id="cert" class="cert">Tailwind - Alura</p>
                             </li>
+                            <li>
+                                <p id="cert" class="cert">JS DOM - Alura</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
-        
+
                 <div class="certificado-container__img">
                     <img src="./img/certificates/BIG_DATA_ANALYTICS-FIAP.png"
                         alt="Foto do certificado de big data e analytics" class="certificado__img" id="certificado-img">
@@ -199,7 +173,7 @@
             <h1 class="main__titles">Habilidades</h1>
 
             <div class="carousel-wrapper">
-                <div class="carousel">
+                <div class="carousel__habilities">
                     <div class="icon one">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                     </div>
@@ -227,7 +201,8 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
                     </div>
                     <div class="icon nine">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
                     </div>
                     <div class="icon ten">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
@@ -267,10 +242,11 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
-    <!-- Mys JS -->
+    <!-- My JS -->
 
     <script src="./js/certificados.js"></script>
     <script src="./js/filtroCertificados.js"></script>
+    <script src="./js/project.js"></script>
 
 </body>
 

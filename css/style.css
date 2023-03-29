@@ -102,14 +102,14 @@
 .container__inicio__img {
     width: 30rem;
     height: 30rem;
-    background-image: url(../img/anime-me.PNG);
+    background-image: url(../img/me-anime.png);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     border-radius: 300px;
 }
 
@@ -147,104 +147,67 @@
 }
 
 /* Projects */
-.container__projects {
-    display: flex;
-    justify-content: center;
-}
 
-.projects__li {
-    display: inline-block;
-}
-
-.projects__input {
-    visibility: hidden;
-}
-
-.projects__label {
-    cursor: pointer;
-    padding: 0.5em 1em;
-    margin-top: 1em;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1em;
-    border: var(--light-gray) solid 2px;
-    border-radius: 10px;
-}
-
-.projects__input:checked+.projects__label {
-    background: var(--light-blue);
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    color: var(--white);
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1em;
-    border: var(--black) solid 2px;
-}
-
-.card__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
+.project__container {
+    width: 70%;
     height: auto;
-}
-
-.card__style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
-    height: 20rem;
-    border: var(--black) solid 0.2em;
-    margin: 1em;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.card__image {
-    margin-top: 1rem;
-    height: 12rem;
-    width: 12rem;
+    margin-top: 3rem;
+    border: 1px solid var(--dark-blue);
+    padding: 2rem;
     border-radius: 10px;
 }
 
-.card__title {
-    margin-top: 0.5em;
+.project__img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
 }
 
-.project__link {
-    text-decoration: none;
-    color: var(--black);
+.project__title {
     font-family: 'Source Code Pro', monospace;
-    padding: 0.2em 0.5em;
-    border-radius: 10px;
-    font-size: 2em;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--black);
+
 }
 
-.project__link:hover {
-    color: var(--white);
-    background: var(--dark-blue);
+.project__icon {
+    width: 2rem;
+    margin: 1rem 1rem 0 0;
 }
 
-.project-container__link {
+.project__container__buttons {
+    width: 65%;
+    margin: 2rem 0 3rem 0;
     display: flex;
-    justify-content: center;
-    margin-top: 5em;
-    margin-bottom: 1em;
+    align-items: center;
+    justify-content:space-between;
 }
 
-@media screen and (max-width: 800px) {
+.project__button {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-family: 'Source Code Pro', monospace;
+}
 
-    .card__style {
-        width: 15rem;
-        height: 15rem;
+@media screen and (min-width: 900px) {
+
+    .project__container {
+       max-width: 50%;
     }
 
-    .card__image {
-        width: 10rem;
-        height: 10rem;
+
+    .project__img {
+        height: 20rem;
     }
 
+    .project__container__buttons {
+        max-width: 40%;
+    }
 }
 
 /* Certifications */
@@ -336,7 +299,7 @@
     perspective: 1000px;
 }
 
-.carousel {
+.carousel__habilities {
     position: absolute;
     width: 100%;
     height: 100%;
