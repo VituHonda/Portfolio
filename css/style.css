@@ -107,7 +107,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem 0;
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,7 +115,7 @@ body {
 }
 
 .container__inicio__text {
-    width: 30%;
+    width: 70%;
     margin: 1rem;
     text-align: center;
 }
@@ -128,12 +128,17 @@ body {
     justify-content: center;
 }
 
+.inicio__title {
+    font-size: 1rem, 2rem, 3rem;
+}
+
 .inicio__text {
-    font-size: 1em;
+    font-size: 0.5rem, 1rem, 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
     .container__inicio__img {
+        margin: 3rem 0 3rem 0;
         width: 20rem;
         height: 20rem;
     }
@@ -223,7 +228,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 5rem;
 }
 
 .certificados-container__procurar {
@@ -295,7 +300,15 @@ body {
     border-radius: 10px;
     text-align: center;
 }
+@media screen and (max-width: 1050px) {
+    .certificado-main {
+        margin-top: 1rem;
+    }
 
+    .certificados__list {
+        max-height: 15rem;
+    }
+}
 
 /* Habilities */
 .carousel-wrapper {
