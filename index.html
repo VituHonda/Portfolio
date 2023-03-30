@@ -74,7 +74,8 @@
         <section class="main__containers bg__white__gray" id="projetos">
             <h1 class="main__titles">Projetos</h1>
 
-            <div class="project__container">
+            <div class="project" data-project="">
+            <!-- <div class="project__container">
                 <a href="https://vituhonda.github.io/Portfolio/"><img src="./img/Projects/Portfolio.png" alt="" class="project__img"></a>
                 <h1 class="project__title">Portfolio</h1>
                 <div>  
@@ -83,11 +84,12 @@
                     <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                     <img class="project__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
                 </div>
+            </div> -->
             </div>
 
             <div class="project__container__buttons">
-                <button class="project__button">Prev</button>
-                <button class="project__button">Next</button> 
+                <button class="project__button" data-control="-">Prev</button>
+                <button class="project__button" data-control="+">Next</button>
             </div>
 
 
@@ -247,6 +249,7 @@
     <script src="./js/certificados.js"></script>
     <script src="./js/filtroCertificados.js"></script>
     <script src="./js/project.js"></script>
+    <script src="./js/projectButton.js"></script>
 
 </body>
 
