@@ -16,24 +16,24 @@ var imgcertificados = [
     "./img/certificates/Certificado ALURA JS DOM.png"
 ];
 
-var posicao = document.querySelectorAll("#cert");
+var certificatePosition = document.querySelectorAll("#cert");
 
 var lista = document.querySelector("#lista-certificados");
 
 var image = document.querySelector("#certificado-img");
 
-achaPosicao(posicao);
+achaPosicao(certificatePosition);
 
 function achaPosicao() {
 
-    for (i = 0; i < posicao.length; i++) {
+    for (i = 0; i < certificatePosition.length; i++) {
 
-        posicao[i].index = i;
+        certificatePosition[i].index = i;
 
-        posicao[i].addEventListener('click', function (e) {
+        certificatePosition[i].addEventListener('click', function (e) {
 
-            for(j=0; j<posicao.length;j++){
-                posicao[j].classList.remove('cert__selecionado')
+            for(j=0; j<certificatePosition.length;j++){
+                certificatePosition[j].classList.remove('cert__selecionado')
             }
 
             var index = this.index

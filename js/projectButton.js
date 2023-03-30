@@ -1,5 +1,5 @@
 const button = document.querySelectorAll("[data-control]")
-var posicao = 0
+var projectPosition = 0
 
 button.forEach(element => {
     element.addEventListener('click', (e) => {
@@ -12,25 +12,24 @@ function changeProject(operacao) {
     var discart = document.querySelector(".project__container")
 
     if (operacao == "-") {
-
-        if (posicao == 0) {
+        if (projectPosition == 0) {
             discart.remove()
-            posicao = projectsList.length - 1
-            createProject(posicao)
+            projectPosition = projectsList.length - 1
+            createProject(projectPosition)
         } else {
             discart.remove()
-            posicao--
-            createProject(posicao)
+            projectPosition--
+            createProject(projectPosition)
         }
     } else {
-        if (posicao == projectsList.length-1) {
+        if (projectPosition == projectsList.length-1) {
             discart.remove()
-            posicao = 0
-            createProject(posicao)
+            projectPosition = 0
+            createProject(projectPosition)
         } else {
             discart.remove()
-            posicao++
-            createProject(posicao)
+            projectPosition++
+            createProject(projectPosition)
         }
     }
 }
