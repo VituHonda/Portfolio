@@ -115,7 +115,7 @@ body {
 }
 
 .container__inicio__text {
-    width: clamp(40vh, 30%, 40%);
+    width: 30%;
     margin: 1rem;
     text-align: center;
 }
