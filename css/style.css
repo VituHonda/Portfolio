@@ -149,7 +149,7 @@ body {
 }
 
 .project__container {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin-top: 3rem;
     border: 1px solid var(--dark-blue);
@@ -192,10 +192,19 @@ body {
     color: var(--white);
 }
 
+@media screen and (min-width: 570px) {
+    .project__container {
+        max-width: 60%;
+    }
+    .project__container__buttons {
+        max-width: 45%;
+    }
+}
+
 @media screen and (min-width: 900px) {
 
     .project__container {
-        max-width: 50%;
+        max-width: 40%;
     }
 
     .project__img {
@@ -203,7 +212,7 @@ body {
     }
 
     .project__container__buttons {
-        max-width: 40%;
+        max-width: 25%;
     }
 
 }

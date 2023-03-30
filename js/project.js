@@ -26,6 +26,7 @@ function createProject(posicao) {
     projectContainer.classList.add("project__container")
 
     const link = document.createElement("a")
+    link.href = projectsList[posicao].link
     const projectImage = document.createElement("img")
     projectImage.src = projectsList[posicao].imgPath
     projectImage.classList.add("project__img")
