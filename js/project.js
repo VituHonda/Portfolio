@@ -5,6 +5,27 @@ const projectsList = [
         imgPath: "./img/Projects/Portfolio.png",
         link: "https://vituhonda.github.io/Portfolio/",
         icons: ["html", "css", "js", "bs"]
+    },
+
+    {
+        title: 'Soon - 1',
+        imgPath: "./img/Projects/soon1.jpg",
+        link: "https://vituhonda.github.io/Portfolio/",
+        icons: ["html"]
+    },
+
+    {
+        title: 'Soon - 2',
+        imgPath: "./img/Projects/soon2.jpg",
+        link: "https://vituhonda.github.io/Portfolio/",
+        icons: ["html", "css"]
+    },
+
+    {
+        title: 'Soon - 3',
+        imgPath: "./img/Projects/soon3.jpg",
+        link: "https://vituhonda.github.io/Portfolio/",
+        icons: ["html", "css", "js"]
     }
 
 ]
@@ -13,7 +34,7 @@ const iconsList = {
     html: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     css: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     js: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    bs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+    bs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
 }
 
 createProject(0)
