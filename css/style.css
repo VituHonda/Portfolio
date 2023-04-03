@@ -157,7 +157,7 @@ body {
     width: 80%;
     height: auto;
     margin-top: 3rem;
-    border: 1px solid var(--dark-blue);
+    border: 2px solid var(--dark-blue);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -193,8 +193,45 @@ body {
     padding: 0.5rem 2rem 0.5rem 2rem;
     border: none;
     border-radius: 10px;
-    background-color: var(--light-blue);
-    color: var(--white);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    background-color: transparent;
+}
+
+#projectButtonPrev:hover {
+    background: linear-gradient(to left, transparent 50%, var(--light-blue)50%);
+    background-size: 1000%;
+    animation: slidePrev 1s forwards;
+    transition: 1s;
+}
+
+#projectButtonNext:hover {
+    background: linear-gradient(to left, var(--light-blue)50%, transparent 50%);
+    background-size: 1000%;
+    animation: slideNext 1s forwards;
+    transition: 1s;
+}
+
+@keyframes slidePrev {
+    0% {
+        background-position: left;
+        color: var(--white);
+    }
+    100% {
+        background-position: right;
+        color: var(--dark-blue);
+    }
+}
+
+@keyframes slideNext {
+    0% {
+        background-position: right;
+        color: var(--white);
+    }
+    100% {
+        background-position: left;
+        color: var(--dark-blue);
+    }
 }
 
 @media screen and (min-width: 570px) {
