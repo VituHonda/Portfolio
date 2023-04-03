@@ -262,11 +262,14 @@ body {
 /* Certifications */
 .certificado-main {
     width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5rem;
 }
+
+
 
 .certificados-container__procurar {
     min-width: 100%;
@@ -301,8 +304,8 @@ body {
     overflow: scroll;
     overflow-x: hidden;
     cursor: pointer;
-    height: 70%;
-    width: 85%;
+    width: 22rem;
+    height: 25rem;
 }
 
 .certificado-container__img {
@@ -337,14 +340,17 @@ body {
     border-radius: 10px;
     text-align: center;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 895px) {
     .certificado-main {
         margin-top: 1rem;
     }
 
     .certificados__list {
-        max-height: 15rem;
+        width: 22rem;
+        height: 15rem;
+        margin: 2rem 0 2rem 0;
     }
+
 }
 
 /* Habilities */
