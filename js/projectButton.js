@@ -16,20 +16,24 @@ function changeProject(operacao) {
             discart.remove()
             projectPosition = projectsList.length - 1
             createProject(projectPosition)
+            updateCounter(projectPosition)
         } else {
             discart.remove()
             projectPosition--
             createProject(projectPosition)
+            updateCounter(projectPosition)
         }
     } else {
         if (projectPosition == projectsList.length-1) {
             discart.remove()
             projectPosition = 0
             createProject(projectPosition)
+            updateCounter(projectPosition)
         } else {
             discart.remove()
             projectPosition++
             createProject(projectPosition)
+            updateCounter(projectPosition)
         }
     }
 }

@@ -198,6 +198,10 @@ body {
     background-color: transparent;
 }
 
+.project__counter {
+    margin-top: 10px;
+}
+
 #projectButtonPrev:hover {
     background: linear-gradient(to left, transparent 50%, var(--light-blue)50%);
     background-size: 1000%;
