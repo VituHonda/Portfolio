@@ -198,7 +198,13 @@ body {
     background-color: transparent;
 }
 
-.project__counter__contianer {
+.project__counter__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter__text {
     display: flex;
     align-items: center;
     justify-content: center;
