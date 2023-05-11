@@ -198,8 +198,10 @@ body {
     background-color: transparent;
 }
 
-.project__counter {
-    margin-top: 10px;
+.project__counter__contianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #projectButtonPrev:hover {
