@@ -13,7 +13,17 @@ var imgcertificados = [
     "./img/certificates/Certificado Python OO avançado - ALURA.png",
     "./img/certificates/Certificado ALURA SASS.png",
     "./img/certificates/Certificado ALURA Tailwind.png",
-    "./img/certificates/Certificado ALURA JS DOM.png"
+    "./img/certificates/Certificado ALURA JS DOM.png",
+    "./img/certificates/AWSCustosServicos.png",
+    "./img/certificates/ThreadsJava.png",
+    "./img/certificates/GitGithub.png",
+    "./img/certificates/JavaCollections.png",
+    "./img/certificates/JavaExceptions.png",
+    "./img/certificates/ReactFullStack.png",
+    "./img/certificates/AprendendoRuby.png",
+    "./img/certificates/Threads1Java.png",
+    "./img/certificates/Threads2Java.png"
+
 ];
 
 var certificatePosition = document.querySelectorAll("#cert");
